@@ -4,7 +4,7 @@
 /* PROJECT PAGE */
 
 .back-icon {
-    height: 2rem;
+    height: 1rem;
     border: 3px solid var(--color-2);
     padding: .3rem;
     border-radius: 50%;
@@ -54,37 +54,6 @@ div.tag p {
     padding: 0.4rem;
     background-color: var(--color-2-transparent);
 }
-
-a.contact-button {
-    margin: 6rem auto;
-    display: flex;
-    align-items: center;
-    border-radius: 3rem;
-    width: 100%;
-    gap: 0.4rem;
-    padding: 1rem 2rem;
-    border: 3px solid var(--color);
-    max-width: 50rem;
-}
-
-.spacer {
-    flex-grow: 0;
-    transition: flex-grow 0.4s ease-in-out;
-}
-
-a.contact-button:hover .spacer {
-    flex-grow: 1;
-}
-
-a.contact-button span {
-    text-wrap: nowrap;
-    font-weight: 600;
-}
-
-a.contact-button svg {
-    height: 1.4rem;
-}
-
 
 /* FOOTER */ 
 
