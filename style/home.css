@@ -1,0 +1,31 @@
+@import url("./base.css");
+
+/* PROJECT */
+
+main .project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: var(--color);
+}
+
+main .project {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+main .project span.index {
+    font-size: 1rem;
+}
+
+main .project a.name {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+main .project a.name:hover {
+    color: var(--color-2);
+    cursor: pointer;
+}

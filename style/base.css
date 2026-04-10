@@ -1,0 +1,93 @@
+:root {
+  --black: rgb(29, 28, 28); 
+  --black-2: rgb(48, 46, 44);
+  --black-3: rgb(64, 63, 61);  
+
+  --white: rgba(232, 234, 237);
+  --white-2: rgb(222, 226, 230);
+  --white-3: rgba(246, 247, 248);
+
+  --color: #75725f;
+  --color-2: rgb(179, 174, 143);
+  --color-2-transparent: rgba(179, 174, 143, 0.3);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  color: var(--color-2);
+  font-family: "Cabin", serif;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+    position: relative;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    margin-bottom: 4rem;
+}
+
+nav {
+    padding: 1rem 2rem;    
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    font-weight: 800;
+    color: var(--color-2);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    border-bottom: 1px solid var(--black-3);
+}
+
+@media (min-width: 50rem) {
+
+    nav {
+        padding: 1rem 0rem;    
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    a.contact-button span {
+        font-size: 1.3rem;
+    }
+
+    a.contact-button svg {
+        height: 1.6rem;
+    }
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+        <title>Orthophoto MAN - Amez-Droz Arnaud</title>
+        <link rel="stylesheet" type="text/css" href="../style/project.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+        </header>
+        <main>
+            
+            <section>
+                <div id="lightbox">
+                    <img id="lightbox-img">
+                </div>
+                <a href="/">
+                    <svg class="back-icon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="78" d="M328 112L184 256l144 144"/></svg>
+                </a>
+                <h1>Orthophoto MAN</h1>
+                <div class="tag">
+                    <p>#FME</p>
+                    <p>#Python</p>
+                    <p>#ArcGIS Pro</p>
+                </div>
+                <div class="grid">   
+                    <div class="media-container">
+                        <figure>
+                            <img class="project-img" src="../image/ortho-man-sample.png">
+                            <figcaption>données de base</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="project-img" src="../image/ortho-man-issue.png" >
+                            <figcaption>problème de superposition</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="project-img" src="../image/ortho-man.png">
+                            <figcaption>rendu final</figcaption>
+                        </figure>
+                    </div>  
+                    <div class="text-container">
+
+                        <div class="context">
+                            <h2>Contexte</h2>
+                            <p>Lors des mises à niveau du cadastre vaudois, les bureaux mandatés devaient fournir une orthophoto sur leur périmètre de travail. Ce processus s'étendant sur plusieurs années, les données raster ont commencé à s'accumuler, rendant leur visualisation de plus en plus difficile. Le format de livraison n'étant pas défini, les données étaient extrêmement hétérogènes.</p>
+                        </div>
+                        <div class="goal">
+                            <h2>Objectifs</h2>
+                            <p>Mettre en place un processus automatisé permettant de traiter par lot les orthophotos existantes, puis d'incrémenter ponctuellement une mosaïque raster unifiée. Les orthophotos n'étant pas standardisées, le processus devait être entièrement dynamique afin de gérer :</p>
+                            <ul>
+                                <li>des résolutions variables</li>
+                                <li>des valeurs NoData non définies</li>
+                                <li>des nombres de bandes variables (3 ou 4)</li>
+                                <li>des pixels de fond hétérogènes. Chaque raster étant découpé sur un périmètre précis, les pixels hors emprise forment un fond dont la valeur varie d'un fichier à l'autre (ex. (0,0,0), (10,10,10), etc.). Le processus détecte automatiquement cette couleur de fond, reclassifie ces pixels en NoData pour les rendre transparents dans la mosaïque, sans altérer les pixels intérieurs représentant l'image réelle</li>
+                                <li>des chevauchements entre rasters, gérés par ordre de priorité</li>
+                            </ul>
+                        </div>
+                        <div class="role">
+                            <h2>Rôle</h2>
+                            <p>Projet mené de manière autonome, de la conception du processus jusqu'à la mise à disposition en interne.</p>
+                        </div>   
+                    </div>   
+                </div>
+            </section>
+            <div id="contact-button-container"></div>
+        </main>
+        
+        <footer id="footer">
+
+        </footer>
+
+        <script src="../script/projectPage.js" type="module"></script>
+    </body>
+
+</html>
