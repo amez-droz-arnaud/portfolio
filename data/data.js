@@ -11,7 +11,7 @@ export const projectData = {
   }, {
     name: "Contrôle qualité structurelle",
     index: "03",
-    page: "./page/controle-qualite.html"
+    page: "/page/controle-qualite.html"
   }, {
     name: "Orthophoto MAN",
     index: "04",
